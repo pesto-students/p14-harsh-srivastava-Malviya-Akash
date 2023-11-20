@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Alignment Properties Example</title>
+    <style>
+        /* Center the container horizontally and vertically within the viewport */
+        body {
+            height: 100vh; /* Set the body height to the full viewport height */
+            display: flex; /* Use flexbox to center the container */
+            justify-content: center; /* Center the container horizontally */
+            align-items: center; /* Center the container vertically */
+            margin: 0; /* Remove default body margin */
+        }
+
+        /* Basic container styles */
+        .container {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            border: 1px solid darkblue;
+        }
+
+        /* Center the content horizontally and vertically within the container */
+        .centered-content {
+            display: flex; /* Use flexbox to center the content */
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            height: 100%; /* Occupy the full height of the container */
+        }
+
+        /* Align content to the left */
+        .align-left {
+            text-align: left; /* Align the text to the left */
+        }
+
+        /* Align content to the right */
+        .align-right {
+            text-align: right; /* Align the text to the right */
+        }
+
+        /* Justify content */
+        .justify-content {
+            text-align: justify; /* Justify the text */
+        }
+    </style>
+</head>
+<body>
+    <!-- Centered container -->
+    <div class="container">
+        <div class="centered-content">
+            <p>This content is centered both horizontally and vertically.</p>
+        </div>
+    </div>
+
+    <!-- Left-aligned container -->
+    <div class="container align-left">
+        <div class="centered-content">
+            <p>This content is aligned to the left.</p>
+        </div>
+    </div>
+
+    <!-- Right-aligned container -->
+    <div class="container align-right">
+        <div class="centered-content">
+            <p>This content is aligned to the right.</p>
+        </div>
+    </div>
+
+    <!-- Justified content container -->
+    <div class="container justify-content">
+        <div class="centered-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id scelerisque velit.</p>
+        </div>
+    </div>
+</body>
+</html>
